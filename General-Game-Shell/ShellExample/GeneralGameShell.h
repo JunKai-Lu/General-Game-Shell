@@ -21,35 +21,35 @@
  * email: Junkai-Lu@outlook.com
 */
 
-namespace general_game_shell
+namespace console
 {
-	namespace console
+	namespace color
 	{
-		namespace color
+		enum Color
 		{
-			enum Color
-			{
-				deep_blue = 1,
-				deep_green = 2,
-				deep_cyan = 3,
-				brown = 4,
-				purple = 5,
-				deep_yellow = 6,
-				deep_white = 7,
-				gray = 8,
-				blue = 9,
-				green = 10,
-				cyan = 11,
-				red = 12,
-				pink = 13,
-				yellow = 14,
-				white = 15
-			};
-		}
-
-		void Cprintf(std::string tex, color::Color color);
+			deep_blue = 1,
+			deep_green = 2,
+			deep_cyan = 3,
+			brown = 4,
+			purple = 5,
+			deep_yellow = 6,
+			deep_white = 7,
+			gray = 8,
+			blue = 9,
+			green = 10,
+			cyan = 11,
+			red = 12,
+			pink = 13,
+			yellow = 14,
+			white = 15
+		};
 	}
 
+	void Cprintf(std::string tex, color::Color color);
+}
+
+namespace general_game_shell
+{
 	//Shell Page Interface
 	class GameShell;
 	class ShellPageBase
